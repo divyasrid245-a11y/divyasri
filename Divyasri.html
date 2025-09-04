@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divyasri Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #9564a5;
+      color: #0f0d10;
+    }
+
+    header {
+      background-color: #440f58;
+      color: #c8c2c9;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #87499d;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #21052e;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #090203;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #090505;
+      margin-bottom: 20px;
+    }
+
+    .project {
+      background-color: #b04fd3;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #011313;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Divyasri</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <nav>
+    <a href="#home">home</a>
+    <a href="#about">About</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>welcome</h2>
+    <p>
+      hello i'm divyasri a web developer passionate about building responsive, user friendly websites and apps. Scroll down to see more about my work and experience. 
+    </p>
+</section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm Divyasri, a web developer passionate about building beautiful and functional websites.
+      I love working with HTML, CSS, JavaScript, and exploring new technologies.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>skills</h2>
+    <p>
+      <li>html</li>
+      <li>js</li>
+      <li>c++</li>
+      <li>python</li>
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio built using HTML, CSS, and JS to showcase my skills and projects.</p>
+    </div>
+    <div class="project">
+      <h3>Task manager</h3>
+      <p>A simple task manager built with vanilla JavaScript and localStorage.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me at: <a href="divya@example.com">divya@example.com</a></p>
+    <button onclick="showMessage()">click</button>
+    <p id="response" style="margin-top: 10px; font-weight: bold;"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 divyasri portfolio</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      const response = document.getElementById('response');
+      response.textContent = 'Thanks for visiting my portfolio!';
+    }
+  </script>
+
+</body>
+</html>
